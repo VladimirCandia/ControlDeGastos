@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Imagen de bienvenida -->
+
+    <!-- Mensaje de bienvenida -->
+
+    <ImageView
+        android:id="@+id/imageViewWelcome"
+        android:layout_width="395dp"
+        android:layout_height="374dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ooo" />
+
+    <TextView
+        android:id="@+id/tvWelcomeMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido a Control De Gastos"
+        android:textSize="24sp"
+        android:layout_below="@id/imageViewWelcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <!-- Botón para avanzar -->
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Empezar"
+        android:layout_below="@id/tvWelcomeMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+</RelativeLayout>

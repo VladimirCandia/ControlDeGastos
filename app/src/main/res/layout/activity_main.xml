@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+
+
+    <EditText
+        android:id="@+id/gastoinicial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cantidad inicial para gastar" />
+
+    <Button
+        android:id="@+id/guardargastoinicial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar cantidad inicial" />
+
+    <!-- Campo para ingresar el ID de la compra -->
+    <EditText
+        android:id="@+id/idcompra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID de la compra" />
+
+    <!-- Campo para ingresar el nombre de la compra -->
+    <EditText
+        android:id="@+id/nombrecompra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre de la compra" />
+
+    <!-- Campo para ingresar el precio de la compra -->
+    <EditText
+        android:id="@+id/preciocompra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Precio de la compra" />
+
+    <!-- Grupo de botones de radio para el método de pago -->
+    <RadioGroup
+        android:id="@+id/metododepago"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/efectibo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Efectivo" />
+
+        <RadioButton
+            android:id="@+id/tarjeta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tarjeta" />
+    </RadioGroup>
+
+    <!-- Botones para guardar, ver, modificar y eliminar compras -->
+    <Button
+        android:id="@+id/guardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar compra" />
+
+    <Button
+        android:id="@+id/ver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver compra" />
+
+    <Button
+        android:id="@+id/modificar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modificar compra" />
+
+    <Button
+        android:id="@+id/eliminar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eliminar compra" />
+
+    <Button
+        android:id="@+id/limpiar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Limpiar campos" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Salir" />
+
+
+</LinearLayout>
